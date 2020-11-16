@@ -1,0 +1,95 @@
+body {
+  background-color: #352f5b;
+}
+.mar {
+  color: rgb(236, 232, 226);
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgb(24, 13, 13);
+}
+.redShadow {
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(236, 54, 41);
+}
+.greenShadow {
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(27, 145, 62);
+}
+.orangeShadow {
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(197, 115, 38);
+}
+.bg-cl {
+  background-color: #423a6f;
+}
+.bg-cll {
+  background-color: #6454b1;
+}
+.NameSize {
+  font-size: 10px;
+}
+.countSize {
+  font-size: 15px;
+}
+.output {
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #2a2255;
+}
+.name {
+  font-size: 20px;
+}
+.titlesize {
+  font-size: 14px;
+  font-weight: 700;
+}
+.s {
+  font-size: 10px;
+  color: greenyellow;
+}
+.resource {
+  font-size: 5px;
+  color: darkgray;
+}
+.footer {
+  font-size: 11px;
+  text-shadow: 2px 2px 8px rgb(24, 13, 13);
+  color: rgb(207, 207, 207);
+}
+.effect8 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before,
+.effect8:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.effect8:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #423a6f;
+  border: none;
+  background: rbg(0, 0, 0, 0.2);
+  max-width: 230px;
+}

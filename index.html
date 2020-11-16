@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid - 19 : :</title>
+    <!-- <link href="fontawesome-5.12.0-web/css/all.min.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="image.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#352f5b" />
+  </head>
+  <body>
+    <header
+      class="text-center h3 text-light mt-3"
+      style="text-shadow: 2px 2px 8px rgb(24, 13, 13)"
+    >
+      Covid-19
+    </header>
+    <header class="text-center h5 text-light">World wide || Dashboard</header>
+    <marquee
+      class="mt-2 p-2 mar"
+      behavior=""
+      direction="left"
+      loop=""
+      bgcolor="#423a6f"
+      >Stay Home Stay Safe</marquee
+    >
+    <div class="container-fluid text-light my-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="row d-flex justify-content-around">
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              New Confirmed
+              <p class="countSize ml-n2 orangeShadow"></p>
+            </div>
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              New Deaths
+              <p class="countSize redShadow"></p>
+            </div>
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              New Recovery
+              <p class="countSize ml-n2 greenShadow"></p>
+            </div>
+          </div>
+          <div class="row mt-4 d-flex justify-content-around">
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              Total Confirmed
+              <p class="countSize ml-n2 orangeShadow"></p>
+            </div>
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              Total Deaths
+              <p class="countSize redShadow"></p>
+            </div>
+            <div class="col-3 p-4 NameSize effect8 text-center">
+              Total Recovery
+              <p class="countSize ml-n2 greenShadow"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container countryField my-5">
+        <form class="form">
+          <input
+            type="text"
+            id="countryName"
+            autocomplete="off"
+            class="form-control m-auto d-inline"
+            placeholder="Country name ..."
+          />
+          <input type="submit" class="btn btn-success mt-n1" value="Get Data" />
+        </form>
+        <h2 class="name p-3 float-right mr-1"></h2>
+        <div class="output bg-cl my-5 pt-3 pb-1 pl-3 d-none">
+          <p class="titlesize p-1">
+            New Confirmed :
+            <span class="outputvalues orangeShadow"></span>
+          </p>
+          <p class="titlesize p-1">
+            Total Confirmed :
+            <span class="outputvalues orangeShadow"></span>
+          </p>
+          <p class="titlesize p-1">
+            New Deaths :
+            <span class="outputvalues redShadow"></span>
+          </p>
+          <p class="titlesize p-1">
+            Total Deaths :
+            <span class="outputvalues redShadow"></span>
+          </p>
+          <p class="titlesize p-1">
+            New Recovery :
+            <span class="outputvalues greenShadow"></span>
+          </p>
+          <p class="titlesize p-1">
+            Total Recovery :
+            <span class="outputvalues greenShadow"></span>
+          </p>
+        </div>
+      </div>
+      <hr class="mt-5" />
+      <footer class="container-fluid footer">
+        <div class="resource ml-1">
+          API resource :
+          <a
+            class="s"
+            href="https://documenter.getpostman.com/view/10808728/SzS8rjbc"
+            >getpostman.com</a
+          >
+        </div>
+        <div class="inline">
+          <p>
+            @2020 | | Sumanth_Burla<span class="float-right mr-n2">v1.0</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="scr.js"></script> -->
+    <script src="Scripts/CovidFetch.js"></script>
+    <script src="Scripts/covidScript.js"></script>
+  </body>
+</html>
